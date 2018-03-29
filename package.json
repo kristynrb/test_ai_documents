@@ -1,0 +1,23 @@
+{
+  "name": "test_ai_webpage",
+  "version": "1.0.0",
+  "description": "interview site for test.ai",
+  "main": "app.js",
+  "dependencies": {
+    "material-design-lite": "^1.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kristynrb/test_ai_documents.git"
+  },
+  "author": "Kristyn Bryan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kristynrb/test_ai_documents/issues"
+  },
+  "homepage": "https://github.com/kristynrb/test_ai_documents#readme"
+}
