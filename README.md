@@ -12,6 +12,13 @@ Notes:
 - Not all of the data that was given was displayed. I ran out of time to have it displayed properly in the chart, but this would be the next step.
 -  I did not have a chance to tackle mobile views. When thinking about mobile view, I would like remove the chart and show only the screenshot, categories, and bar graphs for a portrait view. Landscape may be able to fit the line chart. I was able to put in 1 media query to remove the line graph at a breakpoint.
 
+### Technologies Used
+- HTML
+- CSS
+- JavaScript
+- Angularjs
+- Canvasjs
+
 ### Mockup
 Mockup created in Sketch:
 ![web mockup](https://i.imgur.com/XjF8shL.png)
