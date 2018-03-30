@@ -1,36 +1,40 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" ng-app="testAiApp">
 <head>
   <meta charset="utf-8">
   <title>Test AI Homework - Kristyn Bryan</title>
-  <script src="lib/canvasjs.min.js"></script>
-  <script src="app.js"></script>
-
+  <!-- Angular scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
   <!-- Style Links -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="node_modules/material-design-lite/material.min.css">
   <script src="node_modules/material-design-lite/material.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-</head>
-<body>
+  <script src="lib/canvasjs.min.js"></script>
+  <script src="app.js"></script>
 
+</head>
+<body ng-controller="DataCtrl">
 <section class="app-header">
-<div class="app-name">
-  <h1>Chewy.com</h1>
-</div>
-<div>
-  <p class="test-id">Test Run: A233-CA92-3293-B9AA</p>
-  <p class="test-timestamp">March 30, 2018 - 2:30 pm</p>
-</div>
+  <div>
+    <h1 class="app-name">{{data.app_name}}</h1>
+  </div>
+  <div>
+    <p class="test-id">Test Run: {{data.test_run_id}}</p>
+    <p class="test-timestamp">{{data.time_stamp}}</p>
+  </div>
 </section>
-<section class="main-container">
+<section class="main-container" ng-repeat="case in data.test_cases">
 <div>
-  <p class="test-name">TEST NAME</p>
-  <hr class="test-container-separator" data-content="TESTING THIS OUT">
+  <p class="test-name">{{case.test_name}}</p>
 </div>
+<section ng-repeat="steps in case.test_steps" class="step-section">
+  <hr />
+<div class="step-name">{{steps.step_name}}</div>
 <div class="test-data-container">
   <div class="test-img-container">
-    <img src="img/file1.png" class="test-img" />
+    <img src="{{steps.screenshot}}" class="test-img" />
   </div>
   <div class="data-tile-barchart">
     <div class="data-sub-section">
@@ -57,5 +61,7 @@
   </div>
 </div>
 </section>
+</section>
+
 </body>
 </html>

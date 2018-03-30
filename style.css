@@ -1,6 +1,17 @@
 .app-header {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
   max-width: 80%;
-  margin: 40px auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:10px;
+  margin-top: 20px;
+}
+
+.app-name {
+  font-size: 2.5em;
+  margin: 0;
 }
 
 .bar-chart-container {
@@ -11,7 +22,7 @@ body {
   background-color: #EAE6E5;
   font-family: Helvetica, Arial, Lucida, sans-serif;
   margin: 0;
-  padding: 5%;
+  /* padding: 5%; */
 }
 
 .data-sub-section {
@@ -23,7 +34,7 @@ body {
 
 .data-title {
   display: block;
-  font-size: 1.5em;
+  font-size: 1.25em;
   margin: 10px;
   padding: 10px;
   text-align: center;
@@ -40,6 +51,11 @@ body {
   width: 200px;
 }
 
+html {
+  margin: 0;
+  padding: 0;
+}
+
 .line-graph {
   height: 300px;
   width: auto;
@@ -54,13 +70,20 @@ body {
   background-color: white;
   justify-content: flex-start;
   max-width: 80%;
-  margin: 40px auto;
-  padding: 20px;
+  margin-bottom: 20px;
+  margin-top:0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
 }
 
-.test-name {
-  position: relative;
-  display: inline;
+.step-name {
+  color: grey;
+  padding-bottom: 10px;
+}
+
+.step-section {
+  margin-bottom: 50px;
 }
 
 .test-data-container {
@@ -69,15 +92,24 @@ body {
   overflow-x: scroll;
 }
 
+.test-id {
+  margin: 0;
+}
+
 .test-img {
   height: 350px;
   width: auto;
 }
 
 .test-name {
+  color: #D4A446;
+  font-size: 200%;
   line-height: normal;
   margin: 0;
-  padding-left: 40px;
+}
+
+.test-timestamp {
+  margin: 0;
 }
 
 @media (max-width: 800px) {
