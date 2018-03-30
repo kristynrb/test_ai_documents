@@ -3,7 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>Test AI Homework - Kristyn Bryan</title>
+  <script src="lib/canvasjs.min.js"></script>
   <script src="app.js"></script>
+
   <!-- Style Links -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="node_modules/material-design-lite/material.min.css">
@@ -21,33 +23,39 @@
   <p class="test-timestamp">March 30, 2018 - 2:30 pm</p>
 </div>
 </section>
-<section class="container">
-  <div class="test-img">
-    Image
+<section class="main-container">
+<div>
+  <p class="test-name">TEST NAME</p>
+  <hr class="test-container-separator" data-content="TESTING THIS OUT">
+</div>
+<div class="test-data-container">
+  <div class="test-img-container">
+    <img src="img/file1.png" class="test-img" />
   </div>
-  <div>
-    <div>
+  <div class="data-tile-barchart">
+    <div class="data-sub-section">
       <p class="data-title">TIME</p>
-      <div>
-        BAR GRAPH
+      <div class="bar-chart-container">
+        <div id="timeChartContainer"></div>
       </div>
     </div>
-    <div>
+    <div class="data-sub-section">
       <p class="data-title">MEMORY</p>
-      <div>
-        BAR GRAPH
+      <div class="bar-chart-container">
+        <div id="memoryChartContainer"></div>
       </div>
     </div>
-    <div>
+    <div class="data-sub-section">
       <p class="data-title">CPU</p>
-      <div>
-        BAR GRAPH
+      <div class="bar-chart-container">
+        <div id="cpuChartContainer"></div>
       </div>
     </div>
   </div>
-  <div class="line-graph">
-    LINE GRAPH
+  <div class="line-graph-container">
+    <img src="https://i.imgur.com/cLQFFFp.png" class="line-graph" />
   </div>
+</div>
 </section>
 </body>
 </html>

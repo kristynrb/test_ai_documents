@@ -135,3 +135,75 @@ const data = {
   ]
 }
 console.log(data);
+
+window.onload = function () {
+
+  CanvasJS.addColorSet("orangeShades",["#D4A446"]);
+  CanvasJS.addColorSet("greenShades",["#90EE90"]);
+  CanvasJS.addColorSet("blueShades",["#56BEF4"]);
+
+  var timeChart = new CanvasJS.Chart("timeChartContainer", {
+  	animationEnabled: true,
+    backgroundColor: null,
+    colorSet: "orangeShades",
+    height: 100,
+    width: 100,
+    axisY: {
+      gridThickness: 0,
+      tickLength: 0,
+    },
+  	data: [{
+  		type: "column",
+  		dataPoints: [
+  			{ y: 20, label: 20 },
+  			{ y: 30,  label: 30 },
+  			{ y: 55,  label: 55 },
+  		]
+  	}]
+  });
+
+  var memoryChart = new CanvasJS.Chart("memoryChartContainer", {
+    animationEnabled: true,
+    backgroundColor: null,
+    colorSet: "greenShades",
+    height: 100,
+    width: 100,
+    axisY: {
+      gridThickness: 0,
+      tickLength: 0,
+    },
+    data: [{
+      type: "column",
+      dataPoints: [
+        { y: 20, label: 20 },
+        { y: 30,  label: 30 },
+        { y: 55,  label: 55 },
+      ]
+    }]
+  });
+
+  var cpuChart = new CanvasJS.Chart("cpuChartContainer", {
+  	animationEnabled: true,
+    backgroundColor: null,
+    colorSet: "blueShades",
+    height: 100,
+    width: 100,
+    axisY: {
+      gridThickness: 0,
+      tickLength: 0,
+    },
+  	data: [{
+  		type: "column",
+  		dataPoints: [
+  			{ y: 20, label: 20 },
+  			{ y: 30,  label: 30 },
+  			{ y: 55,  label: 55 },
+  		]
+  	}]
+  });
+  // Render charts
+  timeChart.render();
+  memoryChart.render();
+  cpuChart.render();
+
+}
